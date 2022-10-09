@@ -1,0 +1,7 @@
+Use Audacity's Spectogram Visualizer for the best result. 
+1. Open the wav file using Audacity.
+2. Select the track and click on the black triangle icon.
+3. Select the "Spectogram" option from the drop-down menu.
+4. Sweet bananas.
+
+Flag: GRU22{B@naN@22}
