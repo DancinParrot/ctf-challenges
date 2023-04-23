@@ -56,3 +56,6 @@ Notes (FYI):
 1. List existing containers `docker container ls`
 2. Stop container `docker stop container-id`
 3. Remove container `docker rm container-id`
+
+## Extra
+Here's another interesting and simpler [solution](https://github.com/duckupus/ctf-writeups/blob/main/LNC%203.0/Pwn/Arasaka%20Corp/README.md) by [@duckupus](https://github.com/duckupus)
