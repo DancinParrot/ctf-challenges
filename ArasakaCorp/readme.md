@@ -52,6 +52,9 @@ Notes (FYI):
 3. nc ip-address 8085
 4. Execute payload and you're in!
 
+You may compile the binary with the following command:
+`gcc main.c -o ArasakaCorp -no-pie -fno-stack-protector`
+
 ## Docker Guide
 1. List existing containers `docker container ls`
 2. Stop container `docker stop container-id`
