@@ -24,7 +24,7 @@ The solution will be split into 3 parts: Static Analysis, Buffer Overflow, and F
 ### Static Analysis
 1. You may use checksec, readelf, and file cli-tools to have a brief overview of the ELF executable and verifiy that it has no PIE, no canary, so no stack protection whatsoever, and that it's 64-bit (important to consider the architecture when crafting payload).
 2. Fire up Ghidra and use it to open and analyze the binaries of the ELF executable
-3. Use Ghidra to go through the source code and notice the a few interesting parts, the hidden dev() function, the seemingly-innocent auth global variable, as well as the format string of %i and an insecure gets() function used. Thus, forming the hypothesis of a potential buffer overflow and format string vulnerability.
+3. Use Ghidra to go through the source code and notice the a few interesting parts, the hidden dev() function, the seemingly-innocent auth global variable, as well as the `printf(password)` function that lacks a format string specifier and an insecure gets() function used. Thus, forming the hypothesis of a potential buffer overflow and format string vulnerability.
 
 ### Buffer Overflow
 1. Execute readelf -s ./ArasakaCorp and note down the addresses of dev() and the auth global variable, you can use grep here.
